@@ -1,14 +1,14 @@
 from twilio.rest import Client
 
 # Your Account SID from twilio.com/console
-account_sid = "AC7acfe291e1cd1abfa88419761a9ca62f"
+account_sid = "AccountSiteTwilio"
 # Your Auth Token from twilio.com/console
-auth_token  = "dcb18c1590cc2a623d6c304b319e367a"
+auth_token  = "TokenSiteTwilio"
 
 client = Client(account_sid, auth_token)
 
 message = client.messages.create(
-    to="+5541999590798",
+    to="myNumber",
     from_="+12677109979",
     body="Hello from Python!")
 
